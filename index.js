@@ -11,7 +11,6 @@ app.use(express.urlencoded({
 }))
 app.use(express.json());
 app.use(express.static('public'));
-const Task = require('./models/Task');
 const tasksRoutes = require('./routes/tasksRoutes');
 
 app.use('/tasks', tasksRoutes);
